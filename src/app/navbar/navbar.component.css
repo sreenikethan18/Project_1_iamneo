@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2? family-Poppins: wght@400; 500; 600; 700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+}
+body{
+  background-color: rgb(240, 241, 245);
+}
+nav{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height:100%;
+  left: 0;
+  background: rgb(1, 14, 43);
+  width: 60px;
+  overflow: hidden;
+  transform: width 0.2s linear;
+  /* box-shadow: 0 20px 35px ; */
+}
+.logo{
+  text-align: center;
+  display: flex;
+  transform: all 0.5s ease;
+  margin: 0 0 10px;
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo spam{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color:rgb(240, 241, 245);
+  font-size: 14px;
+  display: table;
+  width: 30px;
+  padding: 10px;
+
+}
+.fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+  right: 20%;
+}
+
+.icon_bg{
+  background-color: brown;
+  width: 250px;
+
+
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+ /* a:hover{
+  background: rgb(186, 145, 239);
+}
+nav:hover{
+  width: 280px;
+  transform: all 0.3s ease;
+} */
+.menu{
+  position: absolute;
+  bottom: 10px;
+}
+.chat{
+  position: absolute;
+  bottom: 50px;
+}
+.help{
+  position: absolute;
+  bottom: 100px;
+}
+
+
+a:hover{
+  background: rgb(186, 145, 239);
+}

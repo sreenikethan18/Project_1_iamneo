@@ -1,0 +1,232 @@
+
+/* .container{
+
+}
+.top_navbar{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+.top_nav_left{
+  align-items: flex-start;
+  flex-direction: row;
+}
+.top_nav_right{
+  align-items: flex-end;
+  flex-direction: row;
+}
+.logo{
+
+} */
+
+/* <--waste-->
+.container_1{
+  margin: 10px;
+}
+
+.container_1 .top_navbar{
+  width: calc(100% - 20px);
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 10px;
+} */
+
+
+/* <--top navbar--> */
+
+
+body{
+  background-color: rgb(198, 198, 249);
+
+}
+.body_1{
+  background-color: rgb(198, 198, 249);
+
+
+}
+
+.nav_2{
+  background-color: rgb(241, 238, 254);
+  /* left: calc(100% - 1230px); */
+}
+
+.nav_1 {
+  background-color: rgb(254, 254, 255);
+  justify-content: space-between;
+  /* left: calc(100% - 1230px); */
+}
+.logo{
+  left: 80px;
+}
+
+/* <--drag_drop--> */
+
+
+:host .mat-form-field{
+  width: 100%;
+}
+.example-container {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.example-list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+
+.box{
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+}
+.head-title{
+  margin: 0%;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 4px;
+  color:black;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+
+
+
+
+
+
+
+/* <div class="row">
+    <div class="col-md-9 ">
+      <div cdkDropListGroup>
+        <div class="row">
+          <div class="col-md-3">
+            <!-- open -->
+            <div class="example-container">
+              <h4 class="head-title">open </h4>
+
+              <div
+                cdkDropList
+                [cdkDropListData]="open"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of open" cdkDrag>{{item.description}}
+                  <div class="box">
+                    <button mat-icon-button color="warn" (click)="deleteOpen"></button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <!-- contacted-->
+            <div class="example-container">
+              <h4 class="head-title">Contacted </h4>
+
+              <div
+                cdkDropList
+                [cdkDropListData]="contacted"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of contacted" cdkDrag>{{item.description}}
+                  <div class="box">
+                    <button mat-icon-button color="warn" (click)="deleteContactedOpen"></button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <!-- Written Test -->
+            <div class="example-container">
+              <h4 class="head-title">Written Test </h4>
+
+              <div
+                cdkDropList
+                [cdkDropListData]="written_test"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of written_test" cdkDrag>{{item.description}}
+                  <div class="box">
+                    <button mat-icon-button color="warn" (click)="deleteWritten_test"></button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <!-- technical_round -->
+            <div class="example-container">
+              <h4 class="head-title">Technical round </h4>
+
+              <div
+                cdkDropList
+                [cdkDropListData]="technical_round"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of technical_round" cdkDrag>{{item.description}}
+                  <div class="box">
+                    <button mat-icon-button color="warn" (click)="deleteTechnical_round">delete</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> */
